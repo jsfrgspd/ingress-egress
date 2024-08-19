@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex justify-center items-center w-full font-custom">
+    <main class="bg-blue-100 w-screen h-full overflow-hidden my-4 mx-4 md:w-auto md:mx-4 md:my-4 2xl:my-2 2xl:mx-2 rounded-2xl py-2 px-4 grid md:grid-cols-2 gap-4">
+        <section class="w-full md:w-3/5 px-4 h-auto py-4 my-6">
+            <!-- INGRESS -->
+            <article class="grid grid-cols-2 bg-white rounded-xl shadow-md items-center h-24 px-4 lg:px-8 xl:px-8">
+                <div class="text-lg font-bold sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">Ingress</div>
+                <div id="entryCount" class="grid grid-cols-2 bg-blue-600 text-white font-semibold rounded-lg items-center h-11 w-auto px-2 md:px-4 lg:w-auto lg:ml-12 xl:w-auto xl:ml-28 2xl:ml-44">
+                    <div class="w-24 text-start text-sm px-0 mx-0 lg:text-start lg:text-base xl:text-base">
+                        <p>Total Passed:</p>
+                    </div>
+                    <div id="entryValue" class="text-end text-sm xl:text-end 2xl:text-end">
+                        <p class="md:text-end">0</p>
+                    </div>
+                </div>
+            </article>
+            <!-- BOX 2 -->
+            <article class="border p-4 rounded-xl shadow-md w-full min-h-96 my-2 bg-white 2xl:px-8">
+                <div class="grid grid-cols-3 gap-4 justify-center">
+                    <div class="text-start text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold text-slate-400">Tracking Number</div>
+                    <div class="text-center text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold text-slate-400">Date and Time</div>
+                    <div class="text-end text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold text-slate-400">Seen Count</div>
+                </div>
+                <hr class="my-4">
+                <div class="dataOut-container">
+                    <div class="text-center"></div>
+                    <div class="text-center"></div>
+                    <div class="text-center"></div>
+                </div>
+            </article>
+        </section>
+        <!-- EGRESS -->
+        <aside class="w-full md:w-3/5 px-4 py-4 h-auto my-6">
+            <!-- BOX 3 -->
+            <article class="grid grid-cols-2 bg-white rounded-xl shadow-md items-center h-24 px-4 lg:px-8 xl:px-8">
+                <div class="text-lg font-bold sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">Egress</div>
+                <div id="exitCount" class="grid grid-cols-2 bg-blue-600 text-white font-semibold rounded-lg items-center h-11 w-auto px-2 md:px-4 lg:w-auto lg:ml-12 xl:w-auto xl:ml-28 2xl:ml-44">
+                    <div class="w-24 text-start text-sm px-0 mx-0 lg:text-start lg:text-base xl:text-base">
+                        <p>Total Passed:</p>
+                    </div>
+                    <div id="exitValue" class="text-end text-sm xl:text-end 2xl:text-end">
+                        <p class="md:text-end">0</p>
+                    </div>
+                </div>
+            </article>
+            <!-- BOX 4 -->
+            <article class="border p-4 rounded-xl shadow-md w-full min-h-96 my-2 bg-white 2xl:px-8">
+                <div class="grid grid-cols-3 gap-4 justify-center">
+                    <div class="text-start text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold text-slate-400">Tracking Number</div>
+                    <div class="text-center text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold text-slate-400">Date and Time</div>
+                    <div class="text-end text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold text-slate-400">Seen Count</div>
+                </div>
+                <hr class="my-4">
+                <div class="dataOut-container">
+                    <div class="text-center"></div>
+                    <div class="text-center"></div>
+                    <div class="text-center"></div>
+                </div>
+            </article>
+        </aside>
+    </main>
+</body>
+</html>
